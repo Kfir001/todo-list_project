@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Notes Board</h1>
+      <div class="content">
+        <textarea id="todoInput" placeholder="Add a new task"></textarea>
+        <div class="datetimeInput">
+          <input type="date" name="date" id="date" />
+          <input type="time" name="time" id="time" />
+        </div>
+        <div class="inline-elements">
+          <div id="currentDate"></div>
+          <button id="btn-add" onclick="addTodo()">Add</button>
+          <div id="currentTime"></div>
+        </div>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+  </body>
+</html>
+
