@@ -7,21 +7,13 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-image: url("./img/background.jpg");
-  background-size: cover;
+  background-size: auto;
   font-family: "Comfortaa", cursive;
   line-height: 1.7;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,9 +101,9 @@ h1 {
 #todoList {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 #todoList li {
@@ -183,24 +175,42 @@ button:hover {
 @media (max-width: 600px) {
   h1 {
     font-size: 40px;
+    margin-bottom: 50px;
   }
 
   #todoInput {
-    width: 100%;
+    width: 90%;
   }
 
   .datetimeInput {
-    width: 100%;
+    width: 90%;
+  }
+
+  #date,
+  #time {
+    font-size: 20px;
+    border: none;
   }
 
   #currentDate,
   #currentTime {
-    width: 100%;
+    width: 95px;
+    font-size: 20px;
+  }
+
+  #todoList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
 
   #todoList li {
-    width: 150px;
-    height: 150px;
-    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  #btn-add {
+    font-size: 20px;
   }
 }
