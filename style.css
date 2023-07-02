@@ -164,54 +164,31 @@ button:hover {
   animation: bounce 1.7s infinite;
 }
 
-@media (min-width: 800px) and (max-height: 400px) {
+@media (max-width: 800px) {
   #todoList li {
-    width: 150px;
-    height: 150px;
+    width: calc(100% -2em);
+    height: calc(100% -2em);
     margin: auto;
   }
-}
 
-@media (max-width: 600px) {
   h1 {
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: calc(2.8rem + ((1vw - 3.5px) * 1.6842));
+    margin-bottom: 3vh;
   }
 
-  #todoInput {
-    width: 90%;
-  }
-
-  .datetimeInput {
-    width: 90%;
-  }
-
+  #todoInput,
+  .datetimeInput,
   #date,
-  #time {
-    font-size: 20px;
-    border: none;
-  }
-
+  #time,
   #currentDate,
-  #currentTime {
-    width: 95px;
-    font-size: 20px;
-  }
-
-  #todoList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  #currentTime,
+  #btn-add {
+    font-size: calc(0.8rem + ((1vw -3.5px) * 0.6316));
+    width: calc(100% -2em);
   }
 
   #todoList li {
-    width: 300px;
-    height: 300px;
-    filter: drop-shadow(18px 18px 12px black);
-  }
-
-  #btn-add {
-    font-size: 20px;
+    width: 20rem;
+    height: 20rem;
   }
 }
